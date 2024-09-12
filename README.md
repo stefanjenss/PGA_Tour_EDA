@@ -15,4 +15,20 @@
 - ***pga_sg.csv***: this file only contained the cleaned data from tournaments in which strokes gained data are available.
 - ***season_2022_exp.csv***: This file only contains tournaments from the 2022 season. It also contains a new variable entitled "course experience," which is based on the previous seven years of experience at a given golf course.
 
-## Introduction
+## 🔍 Abstract
+
+[NEED TO ADD AT THE END!]
+
+## 🧭 Introduction
+
+I conducted an exploratory data analysis (EDA) on a raw dataset of PGA Tour Golf. The dataset covers all the rounds played by every golfer in all the tournaments held between the professional seasons of 2015 and 2022. My aim for this analysis was to gain insights into which aspects of players’ golf games most impact their performance in tournaments. Additionally, I aimed to identify characteristics of various courses on the PGA Tour schedule, such as determining which courses favor golfers with more course experience and the courses where putting plays a crucial role in contending in the tournament.
+
+> _For background information about the sport of golf and a complete description of strokes gained measurements, please refer to section 1 of the Complete Executive Summary._
+
+### 💡 Project Hypotheses
+I have several hypotheses for this EDA, including the following:
+
+1. **Hypothesis #1**: When it comes to winning professional golf tournaments, certain aspects of a player’s game are more essential than others. Specifically, there are particular strokes gained measurements that have a more significant impact on a player’s overall performance in a tournament.
+2. **Hypothesis #2:** Golfers with more course experience will perform better, and there are specific courses on the PGA tour schedule that reward players with the most experience on that course. 
+3. **Hypothesis #3:** There are specific courses on the PGA tour schedule in which it is important to be “hot with the putter” (have high strokes gained - putting statistic).
+   
