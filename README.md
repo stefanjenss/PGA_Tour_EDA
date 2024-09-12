@@ -2,7 +2,7 @@
 
 ### An exploratory data analysis (EDA) exploring the raw data from all Professional Golf Association (PGA) Tour tournaments between the 2015 - 2022 seasons to discover trends and insights into the game of professional golf and which factors might influence a player's success on the tour.
 
-> ***Note:** For a more detailed analysis of the EDA findings, refer to the Complete Executive Summary in this repository.*
+> ***Note:** For a more detailed analysis of the EDA findings, refer to the (Complete Executive Summary)[Complete_Execitive_Summary_of_PGA_Tour_EDA.md] in this repository.*
 
 ## 📂 Included in this Repository
 
@@ -31,6 +31,4 @@ I have several hypotheses for this EDA, including the following:
 2. **Hypothesis #2:** Golfers with more course experience will perform better, and there are specific courses on the PGA tour schedule that reward players with the most experience on that course. 
 3. **Hypothesis #3:** There are specific courses on the PGA tour schedule in which it is important to be “hot with the putter” (have high strokes gained - putting statistic).
 
-
-![image](https://github.com/user-attachments/assets/f84706b3-9546-42bc-90f7-dd673425d640)
 
