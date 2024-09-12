@@ -30,4 +30,7 @@ I have several hypotheses for this EDA, including the following:
 1. **Hypothesis #1**: When it comes to winning professional golf tournaments, certain aspects of a player’s game are more essential than others. Specifically, there are particular strokes gained measurements that have a more significant impact on a player’s overall performance in a tournament.
 2. **Hypothesis #2:** Golfers with more course experience will perform better, and there are specific courses on the PGA tour schedule that reward players with the most experience on that course. 
 3. **Hypothesis #3:** There are specific courses on the PGA tour schedule in which it is important to be “hot with the putter” (have high strokes gained - putting statistic).
-   
+
+
+![image](https://github.com/user-attachments/assets/f84706b3-9546-42bc-90f7-dd673425d640)
+
