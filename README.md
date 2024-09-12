@@ -81,4 +81,42 @@ Upon my first examination of the dataset, I observed that several of the earlier
 | total round | The total number of rounds a player has completed on a given golf course between the 2015 and 2021 season to be used as a reference for their performance in the 2022 season | integer |
 | course experience | The label assigned to a player in the 2022 season based on the experience they had with the course between the 2015 and 2021 seasons | string |
 
+## 📊 PGA Tour Data Analysis Results
 
+### 🥇 Hypothesis #1 Testing *(Which aspects of the game are most important?)*
+
+> **Question:** What aspect of a player’s golf game is the most important indicator of whether or not they perform well in a tournament?
+
+**PairGrid Plot of Finishing Position vs. Strokes-Gained Metrics**
+
+I first created a PairGrid plot containing pair plots and kernal density estimate (KDE) plots to visually analyze which strokes gained variables are most related to the players' finishing positions.
+
+![image](https://github.com/user-attachments/assets/a8c50550-dce2-4c1c-8cb4-46e3c235d49e)
+
+***Important Note:*** When examining the strokes gained variables, the strongest correlation will be found between "strokes gained: total" and finishing position. This is because the winner of the tournament will have a score that deviates furthest from the mean in the negative direction, resulting in the highest number of strokes gained compared to the rest of the field.
+
+***🔑 Key takeaways:*** 
+
+- When determining which aspects of a player's game are the most important predictor of whether they perform well in a tournament, we are most interested in the top row of the PairGrid, and the leftmost column of the PairGrid.
+- For the top row of kernel density estimate (KDE) plots, the top performing players are those towards the bottom of the graph, so we want to see which variables have the most negative relationship.
+    - Upon observation of the top KDE plots (disregarding the st_total variables), the other two variables that seem to have the greatest negative correlation with finishing position are “sg_app” (Strokes Gained - Approach) and “sp_t2g” (Strokes Gained - Tee to Green).
+- “Strokes Gained - Approach” and “Strokes Gained -Tee 2 Green” being the most important indicators of a player's performance in a golf tournament is also supported by the following plots:
+    - Strokes Gained - Approach x Strokes Gained - Total (both scatter and KDE plots)
+        - Since the best-performing players will have the highest “Strokes Gained - Total”, since these two variable appears to be positively correlated with one another, this indicates that “Strokes Gained - Approach” is an important indicator of a player’s overall performance.
+    - Strokes Gained - Tee to Green x Strokes Gained - Total (both scatter and KDE plots)
+        - For the same reason as stated above, the positive correlation between “Strokes Gained - Tee to Green” and “Strokes Gained - Total” indicates that “Strokes Gained - Tee to Green is an important indicator of a player’s overall performance.
+- Further, we observe the relationship between “Strokes Gained - Tee to Green” and the other strokes gained variables, we see that ‘Strokes Gained - Tee to Green” has the strongest positive correlation with “Strokes Gained - Approach.” This indicates that how a player is performing with their approach shots strongly contributes to their “Stroked Gained - Tee to Green” and their overall success in tournaments.
+
+**Correlation Heatmap Matrices of Finishing Position vs. Strokes Gained Metrics**
+
+Next, I created a correlation heatmap matrices to analyze the correlations between the different strokes gained statistics and the players' finishing positions.
+
+![image](https://github.com/user-attachments/assets/e3594cdf-4573-4499-a848-941e9d5b53af)
+
+***🔑 Key takeaways:*** 
+
+- The results of the heatmap of the correlation matrix confirm the findings from the PairGrid plots:
+    - Strokes Gained - Tee to Green has a moderately strong correlation with finishing position (-0.67) and Strokes Gained - Total (0.77).
+    - Strokes Gained - Approach has a moderate correlation with finishing position (-0.48) and Strokes Gained - Total (0.56).
+    - Strokes Gained - Approach has a moderately strong correlation with Strokes Gained - Tee to Green (0.73), indicating the important contribution that approach shots have to Strokes Gained - Tee to Green
+- **New finding:** The heatplot further revealed that “sg_putt” (Strokes Gained - Putting) is almost equally as correlated with finishing position as Strokes Gained - Approach is (-0.43 vs -0.48).
