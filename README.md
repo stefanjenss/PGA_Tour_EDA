@@ -178,6 +178,7 @@ I repeated this, again, for all players who place 10th or above to see how the r
 ***Impression:*** 
 
 - When considering the average previous total rounds played among players finishing 5th or above, the top 10 courses that favor course experience are:
+  
     1. Pebble Beach Resort
     2. TPC Scottsdale
     3. Torrey Pines North
@@ -185,3 +186,34 @@ I repeated this, again, for all players who place 10th or above to see how the r
     5. Colonial
     
     In this list, Pebble Beach Report remains the top course that favors course experience. The courses that remain from the first two lists are Pebble Beach Report, Torrey Pines North, and Waialae CC. The new courses that enter the top 5 are TPC Scottsdale and Colonial.
+
+### 🥉 Hypothesis #3 Testing (On which courses does putting matter the most?)
+
+> **Question**: On which courses is it most important to be "hot with the putter?" In other words, on which courses is it most important to be putting well in order to be in contention to win?
+
+**Bar Graph of Average "Strokes Gained Putting Ratio" of the Tournament Winners on Each Course**
+
+***Approach:***
+
+1. Calculate the average of the “Strokes Gained Putting Ratio” of all the players that have won tournaments on each course.
+    - Strokes Gained - Putting alone is not a good indicator of how important it is to be “hot with the putter” on a given golf course, because courses with easy greens will likely have winners with very high Strokes Gained Putting.
+        - Therefore, the approach I’m going to take is to calculate the “Strokes Gained Putting Ratio”, which will be the ratio of Strokes Gained - Putting to Strokes Gained - Total, since Strokes Gained - Total is the indicator of the player's overall performance.
+        - Ultimately, the “Strokes Gained Putting Statistic” is an indicator of how much the player’s putting contributed to them winning the tournament. It is logical to assume that on putter-intensive courses, the winner’s putting will have to contributing significantly to their overall performance.
+2. Sort the list of “Average Strokes Gained Putting Ratios of All Winning Players by Course” to determine which courses historically have had winners with the highest Strokes Gained Putting Ratio statistic.
+
+![image](https://github.com/user-attachments/assets/9efa3dcd-0e0b-4db0-abda-13986778ae2a)
+
+***Impression:*** 
+
+In the 2015 to 2022 PGA Tour seasons, the courses where being “hot with the putter” has been most important have been:
+
+1. Caves Valley Golf Club
+2. Aronimink Golf Club
+3. Shadow Creek GC
+4. La Quinta CC
+5. TPC Harding Park
+6. Memorial Park GC
+7. Old White Course
+8. Waialae CC
+9. Trinity Forest Golf Club
+10. TPC Four Seasons Resort Golf Club
