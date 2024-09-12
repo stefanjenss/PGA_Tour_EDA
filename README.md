@@ -120,3 +120,68 @@ Next, I created a correlation heatmap matrices to analyze the correlations betwe
     - Strokes Gained - Approach has a moderate correlation with finishing position (-0.48) and Strokes Gained - Total (0.56).
     - Strokes Gained - Approach has a moderately strong correlation with Strokes Gained - Tee to Green (0.73), indicating the important contribution that approach shots have to Strokes Gained - Tee to Green
 - **New finding:** The heatplot further revealed that “sg_putt” (Strokes Gained - Putting) is almost equally as correlated with finishing position as Strokes Gained - Approach is (-0.43 vs -0.48).
+
+### 🥈 Hypothesis #2 Testing (Does experience matter? On which courses does it matter?)
+
+> **Question:** Do PGA Tour players with more experience perform better than those with less? And are there specific courses on the PGA Tour schedule that reward golfers with more course experience?
+
+**Side-by-Side Boxplots of Players with Different Experience Levels for 2022 Season**
+
+First, I generated side-by-side boxplots of player course experience and finishing position to see if the distributions show any meaningful difference.
+
+![image](https://github.com/user-attachments/assets/77b713cc-0948-45a4-891f-a63e2323ae6e)
+
+***Impression:*** 
+
+- In general, experienced and knowledgeable golfers tend to perform slightly better than novice players; however, the difference in the distribution is not significant.
+- Out of the three categories, experienced golfers tend to perform the best. This is expected, as in most sports (up until a certain point) the more time they have to improve and understand their game, the better they will perform. However, it is important to note that there is little difference in distribution between the experienced and knowledgeable golfers.
+
+**Bar Graph of Total Round Played on Course Prior to Win in 2022 Season**
+
+Secondly, I created a bar graph that shows the total number of rounds the previous winners had played on the course prior to them winning there in the 2022 season.
+
+![image](https://github.com/user-attachments/assets/33d31a12-1ee7-45aa-947d-3a91de0be629)
+
+***Impression:***
+
+- Among tournament winners, the top 5 courses that most favor course experience are:
+    1. Pebble Beach Resort
+    2. Muirfield Village Golf Club
+    3. La Quinta CC
+    4. Torrey Pines North
+    5. Waialae CC
+
+**Bar Graph of Average Rounds Played on Course Prior to Top-5 Finish in 2022 Season**
+
+I then repeated step two, but instead of just including the golfers who won the tournament, I included the average total previous rounds played of all the players who placed 5th or above.
+
+![image](https://github.com/user-attachments/assets/5a3d40f5-eef5-410a-ab90-334601817590)
+
+***Impression:***
+
+- When considering the average previous total rounds played among players finishing 5th or above, the top 5 courses that favor course experience are:
+    1. Pebble Beach Resort
+    2. Torrey Pines North
+    3. Waialae CC
+    4. La Quinta CC
+    5. Albany - New Providence
+    
+    In this list, Pebble Beach Resort remains the top course that favors course experience. The only course that difference between these two lists are that Muirfield Village Golf Club moves out of the top 5 down to 15th, and Albany - New Providence is the new 5th.
+    
+
+**Bar Graph of Average Rounds Played on Course Prior to Top-10 Finish in 2022 Season**
+
+I repeated this, again, for all players who place 10th or above to see how the results change when including a larger sample of the top performing golfers.
+
+![image](https://github.com/user-attachments/assets/fce0b234-7b19-40d0-9ba0-48d05219e8b4)
+
+***Impression:*** 
+
+- When considering the average previous total rounds played among players finishing 5th or above, the top 10 courses that favor course experience are:
+    1. Pebble Beach Resort
+    2. TPC Scottsdale
+    3. Torrey Pines North
+    4. Waialae CC
+    5. Colonial
+    
+    In this list, Pebble Beach Report remains the top course that favors course experience. The courses that remain from the first two lists are Pebble Beach Report, Torrey Pines North, and Waialae CC. The new courses that enter the top 5 are TPC Scottsdale and Colonial.
