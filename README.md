@@ -43,7 +43,7 @@ https://www.kaggle.com/datasets/robikscube/pga-tour-golf-data-20152022
 
 Upon my first examination of the dataset, I observed that several of the earlier tournaments lacked strokes gained data. To avoid omitting important data from these tournaments in my analysis of course experience, I decided to create two separate DataFrames for my analysis. One of the DataFrames excluded tournaments without strokes gained information, while the other included a value of 0 for all missing strokes gained data. This way, I could still analyze the other relevant data from those tournaments.
 
-## *️⃣ Overview of Data Cleaning Steps
+### *️⃣ Overview of Data Cleaning Steps
 
 1. Dropped empty variables
 2. Dropped undesired variables
