@@ -31,4 +31,54 @@ I have several hypotheses for this EDA, including the following:
 2. **Hypothesis #2:** Golfers with more course experience will perform better, and there are specific courses on the PGA tour schedule that reward players with the most experience on that course. 
 3. **Hypothesis #3:** There are specific courses on the PGA tour schedule in which it is important to be “hot with the putter” (have high strokes gained - putting statistic).
 
+## 🧱 Explanation of PGA Tour Dataset
+
+### 🔗 Data Source
+
+The data used for the analysis was initially obtained from [advancedsportsanalytics.com](http://advancedsportsanalytics.com/), which is now offline. However, the dataset is still available thanks to a [Kaggle.com](http://kaggle.com/) user who has uploaded it. The dataset can be accessed through the following link:
+
+https://www.kaggle.com/datasets/robikscube/pga-tour-golf-data-20152022
+
+### 🧹 Data Cleaning Process
+
+Upon my first examination of the dataset, I observed that several of the earlier tournaments lacked strokes gained data. To avoid omitting important data from these tournaments in my analysis of course experience, I decided to create two separate DataFrames for my analysis. One of the DataFrames excluded tournaments without strokes gained information, while the other included a value of 0 for all missing strokes gained data. This way, I could still analyze the other relevant data from those tournaments.
+
+## *️⃣ Overview of Data Cleaning Steps
+
+1. Dropped empty variables
+2. Dropped undesired variables
+3. Identified and changing identifying variables
+4. Addressed missing values in the full dataset
+5. Created a new stroked gained DataFrame
+6. Created a “total rounds” and “course experience” variables
+
+### 📘 PGA Tour Data Dictionary
+
+| Variable | Description | Data Type |
+| --- | --- | --- |
+| Player_initial_last | Initial of player's first name and their full last name | string |
+| player | The player's full name | string |
+| player id | A unique ID assigned to each individual player | string |
+| tournament name | The name of a tournament | string |
+| tournament id | A unique ID assigned to each individual tournament | string |
+| course | The name of the course the tournament is being played at | string |
+| date | The date the tournament is being played | string |
+| season | The year the tournament is being played | string |
+| purse | The total prize money available for the tournament | float |
+| hole_par | The number of stroke expected for a player to get throughout tournament | integer |
+| strokes | The actual number of stroke the player had over the course of a tournament | integer |
+| n-rounds | The number of golf round a player completed in a tournament | integer |
+| made_cut | Whether a player made the cut after the second round to continue onto the weekend rounds | integer |
+| Finish | The position a player finished in a tournament (indicates whether they tied for that position) | string |
+| pos | The numerical position a player finished (exclusing whether they tied for that position) | float |
+| no_cut | Whether or not the event included a cut after the first two days | integer |
+| sg_putt | Strokes gained: putting | float |
+| sg_arg | Strokes gained: around the green | float |
+| sg_app | Strokes gained: approach the green | float |
+| sg_ott | Strokes gained: off the tee | float |
+| sg_t2g | Strokes gained: tee to green | float |
+| sg_total | The total strokes gained over the round | float |
+| total round | The total number of rounds a player has completed on a given golf course between the 2015 and 2021 season to be used as a reference for their performance in the 2022 season | integer |
+| course experience | The label assigned to a player in the 2022 season based on the experience they had with the course between the 2015 and 2021 seasons | string |
+
 
