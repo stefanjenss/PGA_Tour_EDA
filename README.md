@@ -2,7 +2,7 @@
 
 ### An exploratory data analysis (EDA) exploring the raw data from all Professional Golf Association (PGA) Tour tournaments between the 2015 - 2022 seasons to discover trends and insights into the game of professional golf and which factors might influence a player's success on the tour.
 
-> ***Note:** For a more detailed analysis of the EDA findings, refer to the (Complete Executive Summary)[Complete_Execitive_Summary_of_PGA_Tour_EDA.md] in this repository.*
+> ***Note:** For a more detailed analysis of the EDA findings, refer to the [Complete Executive Summary](Complete_Execitive_Summary_of_PGA_Tour_EDA.md) in this repository.*
 
 ## 📂 Included in this Repository
 
